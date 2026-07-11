@@ -1,30 +1,50 @@
 #!name=桃源谷首页净化 & 广告拦截
-#!desc=去除所有推广入口 (微信/支付宝/乐园) + 拦截第三方广告
+#!desc=去除所有推广入口 (微信/支付宝/乐园) + 拦截第三方广告 (穿山甲/Sigmob/广点通/百度等)
 #!author=lhcin
-#!version=3.3.0
+#!version=3.4.0
 
 [General]
 title = 桃源谷首页净化 & 广告拦截
-desc = 深度清洗所有接口 + 广告拦截
+desc = 深度清洗所有接口 + 拦截开屏广告 + CPS 清洗
 author = lhcin
-version = 3.3.0
+version = 3.4.0
 
 [MITM]
-# 扩大 MitM 范围到所有子域名，防止福利/活动接口漏网
 hostname = *.taoyuangu.com
 
 [Script]
-# 去除 cpsApi 限制，扫描所有 taoyuangu.com 的 JSON 响应
-TyCleaner=type=http-response,pattern=taoyuangu\.com,requires-body=1,max-size=4194304,script-path=https://raw.githubusercontent.com/lhcin/Rules/main/Loon/TyCleaner.js
+# v3.4 新增开屏广告拦截 + CPS 清洗
+TyCleaner=type=http-response,pattern=taoyuangu\\.com,requires-body=1,max-size=4194304,script-path=https://raw.githubusercontent.com/clhg/Rules/beta/Loon/TyCleaner.js
 
 [Rule]
-# === 桃源谷广告拦截规则 ===
-DOMAIN-SUFFIX,beizi.biz,REJECT
-DOMAIN-SUFFIX,1rtb.net,REJECT
-DOMAIN-SUFFIX,1rtb.com,REJECT
-DOMAIN-SUFFIX,hubcloud.com.cn,REJECT
-DOMAIN-SUFFIX,pos.baidu.com,REJECT
-DOMAIN-SUFFIX,als.baidu.com,REJECT
+# ═══ 穿山甲/Pangle 广告（ByteDance）═══
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,adsmartget.datads.cn,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN-SUFFIX,volccdn.com,REJECT
+DOMAIN-SUFFIX,pangle.com,REJECT
+DOMAIN-SUFFIX,pangleglobal.com,REJECT
+DOMAIN-SUFFIX,bytescm.com,REJECT
+DOMAIN-SUFFIX,zijieapi.com,REJECT
+DOMAIN-SUFFIX,volces.com,REJECT
+DOMAIN,webcast-open.douyin.com,REJECT
+# ═══ Sigmob 广告 ═══
+DOMAIN-SUFFIX,sigmob.cn,REJECT
+# ═══ 腾讯广点通（GDT）═══
+DOMAIN,v2mi.gdt.qq.com,REJECT
+# ═══ 百度联盟 ═══
+DOMAIN-SUFFIX,pos.baidu.com,REJECT
+DOMAIN-SUFFIX,als.baidu.com,REJECT
+DOMAIN,bgg.baidu.com,REJECT
+DOMAIN,hmma.baidu.com,REJECT
+# ═══ 其他广告 ═══
+DOMAIN-SUFFIX,1rtb.net,REJECT
+DOMAIN-SUFFIX,1rtb.com,REJECT
+DOMAIN-SUFFIX,beizi.biz,REJECT
+DOMAIN-SUFFIX,hubcloud.com.cn,REJECT
+DOMAIN,mpcfg.fancydsp.com,REJECT
+DOMAIN,fg.xiawan8.com,REJECT
+# ═══ 桃源谷自家广告接口 ═══
 DOMAIN,adfile.taoyuangu.com,REJECT
+# ═══ 友盟统计 ═══
+DOMAIN-SUFFIX,umeng.com,REJECT
