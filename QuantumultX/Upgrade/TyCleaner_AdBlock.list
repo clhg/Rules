@@ -1,0 +1,37 @@
+# ═══ 穿山甲/Pangle 广告（ByteDance）═══
+host-suffix, pangolin-sdk-toutiao.com, reject
+host-suffix, adsmartget.datads.cn, reject
+host-suffix, pglstatp-toutiao.com, reject
+host-suffix, volccdn.com, reject
+host-suffix, pangle.com, reject
+host-suffix, pangleglobal.com, reject
+host-suffix, bytescm.com, reject
+host-suffix, zijieapi.com, reject
+host-suffix, volces.com, reject
+host, webcast-open.douyin.com, reject
+
+# ═══ Sigmob 广告 ═══
+host-suffix, sigmob.cn, reject
+
+# ═══ 腾讯广点通（GDT）═══
+host, v2mi.gdt.qq.com, reject
+
+# ═══ 百度联盟 ═══
+host-suffix, pos.baidu.com, reject
+host-suffix, als.baidu.com, reject
+host, bgg.baidu.com, reject
+host, hmma.baidu.com, reject
+
+# ═══ 其他广告 ═══
+host-suffix, 1rtb.net, reject
+host-suffix, 1rtb.com, reject
+host-suffix, beizi.biz, reject
+host-suffix, hubcloud.com.cn, reject
+host, mpcfg.fancydsp.com, reject
+host, fg.xiawan8.com, reject
+
+# ═══ 桃源谷自家广告接口 ═══
+host, adfile.taoyuangu.com, reject
+
+# ═══ 友盟统计（可选，收集设备信息）═══
+host-suffix, umeng.com, reject
