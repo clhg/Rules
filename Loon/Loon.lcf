@@ -87,6 +87,7 @@ https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/VideoGo_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/SF-Express_remove_ads.lpx, enabled=true
 https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx, enabled=true
+https://raw.githubusercontent.com/clhg/Rules/refs/heads/beta/Loon/TyCleaner.lpx， enabled=true
 # https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/HTTPDNS.Block.plugin, enabled=false
 # https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/blockAds.plugin, enabled=true
 https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx, enabled=true
