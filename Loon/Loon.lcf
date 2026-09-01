@@ -40,7 +40,7 @@ JP Fallback=fallback, 🇯🇵Japan, interval=600, max-timeout=2000, img-url=htt
 SG Fallback=fallback, 🇸🇬Singapore, interval=600, max-timeout=2000, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 US Fallback=fallback, 🇺🇸United States, interval=600, max-timeout=2000, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 # --- Auto (select: choose between latency priority and fallback) ---
-# HK Auto=select, HK Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+HK Auto=select, HK Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 # TW Auto=select, TW Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
 # JP Auto=select, JP Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 # SG Auto=select, SG Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
