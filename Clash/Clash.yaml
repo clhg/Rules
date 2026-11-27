@@ -362,6 +362,10 @@ rules:
   - RULE-SET,Gemini,AI-IPDeep-Only
   - RULE-SET,Claude,AI-IPDeep-Only
   - RULE-SET,OpenAI,AI-IPDeep-Only
+  - DOMAIN-SUFFIX,claude.com,AI-IPDeep-Only
+  - DOMAIN-SUFFIX,ping0.cc,AI-IPDeep-Only
+  - DOMAIN-SUFFIX,ippure.com,AI-IPDeep-Only
+  - DOMAIN-SUFFIX,icanhazip.com,AI-IPDeep-Only
   - RULE-SET,Github,Github
   - RULE-SET,Google,Google
   - RULE-SET,Youtube,Google
