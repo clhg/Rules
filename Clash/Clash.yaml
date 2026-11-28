@@ -74,6 +74,14 @@ dns:
     - 114.114.114.114
   nameserver:
     - https://1.1.1.1/dns-query#Default_Proxy
+    - https://8.8.8.8/dns-query#Default_Proxy
+  nameserver-policy:
+    geosite:cn:
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
+    geosite:gfw:
+      - https://1.1.1.1/dns-query#Default_Proxy
+      - https://8.8.8.8/dns-query#Default_Proxy
   proxy-server-nameserver:
     - 223.5.5.5
     - 114.114.114.114
